@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+    <style>
+      .bd-color {
+        border-radius: 2px;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.1), inset 0 0 0 1px rgba(0,0,0,.1);
+        display: inline-block;
+        float: left;
+        height: 24px;
+        margin-right: 8px;
+        width: 24px;
+      }
+      #typography p {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="site" class="page">
+      <!-- Nav -->
+      <div class="container section">
+        <nav class="level">
+          <!-- Left side -->
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle is-5">
+                <strong>123</strong> posts
+              </p>
+            </div>
+            <div class="level-item">
+              <div class="field has-addons">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Find a post">
+                </p>
+                <p class="control">
+                  <button class="button">
+                    Search
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="level-right">
+            <p class="level-item"><a href="modifiers.html">Modifiers</a></p>
+            <p class="level-item"><a href="columns.html">Columns</a></p>
+            <p class="level-item"><a href="index.html">Layout</a></p>
+            <p class="level-item"><a href="form.html">Form</a></p>
+            <p class="level-item"><a href="elements.html">Elements</a></p>
+            <p class="level-item"><a href="components.html">Components</a></p>
+            <p class="level-item"><a class="button is-success">I'm a button</a></p>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Syntax -->
+      <div class="container section">
+        <h2 class="title is-2">Syntax</h2>
+
+        <a class="button is-primary">
+          Button
+        </a>
+        <a class="button is-link">
+          Button
+        </a>
+        <a class="button is-info">
+          Button
+        </a>
+        <a class="button is-success">
+          Button
+        </a>
+        <a class="button is-warning">
+          Button
+        </a>
+        <a class="button is-danger">
+          Button
+        </a>
+      </div>
+
+      <!-- Helpers -->
+      <div class="container section">
+        <h2 class="title is-2">Helpers</h2>
+
+        <p class="is-clearfix">Fixes an element's floating children</p>
+        <p class="is-pulled-left">Moves an element to the left</p>
+        <p class="is-pulled-right">Moves an element to the right</p>
+      </div>
+
+      <!-- Responsive helpers -->
+      <div class="container section">
+        <h2 class="title is-2">Responsive helpers</h2>
+
+        <p class="is-block" style="margin-bottom: 0;">Make an element <code>display: block</code></p>
+        <p class="is-flex">Make an element <code>display: flex</code></p>
+        <p class="is-inline">Make an element <code>display: inline</code></p>
+        <p class="is-inline-block">Make an element <code>display: inline-block</code></p>
+        <p class="is-inline-flex">Make an element <code>display: inline-flex</code></p>
+      </div>
+
+      <!-- Color helpers -->
+      <div class="container section">
+        <h2 class="title is-2">Color helpers</h2>
+
+        <table class="table is-bordered">
+          <thead>
+            <tr>
+              <th>
+                Class
+              </th>
+              <th>
+                Color
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>has-text-white</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 100%);"></span>
+                <code>hsl(0, 0%, 100%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-black</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 4%);"></span>
+                <code>hsl(0, 0%, 4%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-light</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+                <code>hsl(0, 0%, 96%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-dark</code></td>
+              <td><span class="bd-color" style="background:  hsl(0, 0%, 21%);"></span>
+                <code>hsl(0, 0%, 21%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-primary</code></td>
+              <td><span class="bd-color" style="background: hsl(171, 100%, 41%);"></span>
+                <code>hsl(171, 100%, 41%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-info</code></td>
+              <td><span class="bd-color" style="background: hsl(204, 86%, 53%);"></span>
+                <code>hsl(204, 86%, 53%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-link</code></td>
+              <td><span class="bd-color" style="background: hsl(217, 71%,  53%);"></span>
+                <code>hsl(217, 71%,  53%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-success</code></td>
+              <td><span class="bd-color" style="background: hsl(141, 71%,  48%);"></span>
+                <code>hsl(141, 71%,  48%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-warning</code></td>
+              <td><span class="bd-color" style="background: hsl(48,  100%, 67%);"></span>
+                <code>hsl(48,  100%, 67%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-danger</code></td>
+              <td><span class="bd-color" style="background: hsl(348, 100%, 61%);"></span>
+                <code>hsl(348, 100%, 61%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-black-bis</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 7%);"></span>
+                <code>hsl(0, 0%, 7%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-black-ter</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 14%);"></span>
+                <code>hsl(0, 0%, 14%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-grey-darker</code></td>
+              <td><span class="bd-color" style="background:  hsl(0, 0%, 21%);"></span>
+                <code>hsl(0, 0%, 21%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-grey-dark</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 29%);"></span>
+                <code>hsl(0, 0%, 29%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-grey</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 48%);"></span>
+                <code>hsl(0, 0%, 48%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-grey-light</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 71%);"></span>
+                <code>hsl(0, 0%, 71%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-grey-lighter</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 86%);"></span>
+                <code>hsl(0, 0%, 86%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-white-ter</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 96%);"></span>
+                <code>hsl(0, 0%, 96%)</code>
+              </td>
+            </tr>
+            <tr>
+              <td><code>has-text-white-bis</code></td>
+              <td><span class="bd-color" style="background: hsl(0, 0%, 98%);"></span>
+                <code>hsl(0, 0%, 98%)</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Typography helpers -->
+      <div id="typography" class="container section">
+        <h2 class="title is-2">Typography helpers</h2>
+
+        <p class="is-size-1">Font-size: <code>3rem</code></p>
+        <p class="is-size-2">Font-size: <code>2.5rem</code></p>
+        <p class="is-size-3">Font-size: <code>2rem</code></p>
+        <p class="is-size-4">Font-size: <code>1.5rem</code></p>
+        <p class="is-size-5">Font-size: <code>1.25rem</code></p>
+        <p class="is-size-6">Font-size: <code>1rem</code></p>
+        <p class="is-size-7">Font-size: <code>0.75rem</code></p>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

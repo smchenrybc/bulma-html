@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <body>
+    <div id="site" class="page">
+      <!-- Nav -->
+      <div class="container section">
+        <nav class="level">
+          <!-- Left side -->
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle is-5">
+                <strong>123</strong> posts
+              </p>
+            </div>
+            <div class="level-item">
+              <div class="field has-addons">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Find a post">
+                </p>
+                <p class="control">
+                  <button class="button">
+                    Search
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="level-right">
+            <p class="level-item"><a href="modifiers.html">Modifiers</a></p>
+            <p class="level-item"><a href="columns.html">Columns</a></p>
+            <p class="level-item"><a href="index.html">Layout</a></p>
+            <p class="level-item"><a href="form.html">Form</a></p>
+            <p class="level-item"><a href="elements.html">Elements</a></p>
+            <p class="level-item"><a href="components.html">Components</a></p>
+            <p class="level-item"><a class="button is-success">I'm a button</a></p>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Columns -->
+      <div class="container section">
+        <h2 class="title is-2">Columns</h2>
+
+        <div class="columns">
+          <div class="column">
+            First column
+          </div>
+          <div class="column">
+            Second column
+          </div>
+          <div class="column">
+            Third column
+          </div>
+          <div class="column">
+            Fourth column
+          </div>
+        </div>
+      </div>
+
+      <!-- Sizes -->
+      <div class="container section">
+        <h2 class="title is-2">Sizes</h2>
+
+        <div class="columns">
+          <div class="column is-four-fifths">is-four-fifths</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-three-quarters">is-three-quarters</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-two-thirds">is-two-thirds</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-three-fifths">is-three-fifths</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-half">is-half</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-two-fifths">is-two-fifths</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-one-third">is-one-third</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-one-quarter">is-one-quarter</div>
+          <div class="column">Auto</div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-one-fifth">is-one-fifth</div>
+          <div class="column">Auto</div>
+          <div class="column">Auto</div>
+        </div>
+      </div>
+
+      <!-- Responsiveness -->
+      <div class="container section">
+        <h2 class="title is-2">Responsiveness</h2>
+
+        <div class="columns is-mobile">
+          <div class="column">1</div>
+          <div class="column">2</div>
+          <div class="column">3</div>
+          <div class="column">4</div>
+        </div>
+      </div>
+
+      <!-- Nesting -->
+      <div class="container section">
+        <h2 class="title is-2">Nesting</h2>
+
+        <div class="columns">
+          <div class="column">
+            <p class="bd-notification is-info">First column</p>
+            <div class="columns is-mobile">
+              <div class="column">
+                <p class="bd-notification is-info">First nested column</p>
+              </div>
+              <div class="column">
+                <p class="bd-notification is-info">Second nested column</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <p class="bd-notification is-danger">Second column</p>
+            <div class="columns is-mobile">
+              <div class="column is-half">
+                <p class="bd-notification is-danger">50%</p>
+              </div>
+              <div class="column">
+                <p class="bd-notification is-danger">Auto</p>
+              </div>
+              <div class="column">
+                <p class="bd-notification is-danger">Auto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gaps -->
+      <div class="container section">
+        <h2 class="title is-2">Gaps</h2>
+
+        <div class="columns is-gapless">
+          <div class="column">
+            No gap
+          </div>
+          <div class="column">
+            No gap
+          </div>
+          <div class="column">
+            No gap
+          </div>
+          <div class="column">
+            No gap
+          </div>
+        </div>
+      </div>
+
+      <!-- Options -->
+      <div class="container section">
+        <h2 class="title is-2">Options</h2>
+
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column is-half">
+            <code>is-half</code>
+          </div>
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column is-one-quarter">
+            <code>is-one-quarter</code>
+          </div>
+          <div class="column">
+            Auto
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

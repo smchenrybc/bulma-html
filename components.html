@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <body>
+    <div id="site" class="page">
+      <!-- Nav -->
+      <div class="container section">
+        <nav class="level">
+          <!-- Left side -->
+          <div class="level-left">
+            <div class="level-item">
+              <p class="subtitle is-5">
+                <strong>123</strong> posts
+              </p>
+            </div>
+            <div class="level-item">
+              <div class="field has-addons">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Find a post">
+                </p>
+                <p class="control">
+                  <button class="button">
+                    Search
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="level-right">
+            <p class="level-item"><a href="modifiers.html">Modifiers</a></p>
+            <p class="level-item"><a href="columns.html">Columns</a></p>
+            <p class="level-item"><a href="index.html">Layout</a></p>
+            <p class="level-item"><a href="form.html">Form</a></p>
+            <p class="level-item"><a href="elements.html">Elements</a></p>
+            <p class="level-item"><a href="components.html">Components</a></p>
+            <p class="level-item"><a class="button is-success">I'm a button</a></p>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="container section">
+        <h2 class="title is-2">Breadcrumb</h2>
+
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Bulma</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Components</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Card -->
+      <div class="container section">
+        <h2 class="title is-2">Card</h2>
+
+        <div class="card" style="max-width: 350px;">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">John Smith</p>
+                <p class="subtitle is-6">@johnsmith</p>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="container section">
+        <h2 class="title is-2">Dropdown</h2>
+
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+              <span>Click me</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                Overview
+              </a>
+              <a href="#" class="dropdown-item">
+                Modifiers
+              </a>
+              <a href="#" class="dropdown-item">
+                Grid
+              </a>
+              <a href="#" class="dropdown-item">
+                Form
+              </a>
+              <a href="#" class="dropdown-item">
+                Elements
+              </a>
+              <a href="#" class="dropdown-item">
+                Components
+              </a>
+              <a href="#" class="dropdown-item">
+                Layout
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+              <span>Hover me</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <div class="container section">
+        <h2 class="title is-2">Menu</h2>
+
+        <aside class="menu">
+          <p class="menu-label">
+            General
+          </p>
+          <ul class="menu-list">
+            <li><a>Dashboard</a></li>
+            <li><a>Customers</a></li>
+          </ul>
+          <p class="menu-label">
+            Administration
+          </p>
+          <ul class="menu-list">
+            <li><a>Team Settings</a></li>
+            <li>
+              <a class="is-active">Manage Your Team</a>
+              <ul>
+                <li><a>Members</a></li>
+                <li><a>Plugins</a></li>
+                <li><a>Add a member</a></li>
+              </ul>
+            </li>
+            <li><a>Invitations</a></li>
+            <li><a>Cloud Storage Environment Settings</a></li>
+            <li><a>Authentication</a></li>
+          </ul>
+          <p class="menu-label">
+            Transactions
+          </p>
+          <ul class="menu-list">
+            <li><a>Payments</a></li>
+            <li><a>Transfers</a></li>
+            <li><a>Balance</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Message -->
+      <div class="container section">
+        <h2 class="title is-2">Message</h2>
+
+        <article class="message" style="max-width: 500px;">
+          <div class="message-header">
+            <p>Hello World</p>
+            <button class="delete" aria-label="delete"></button>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+            placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
+              venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin
+            porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget,
+            facilisis sodales sem.
+          </div>
+        </article>
+      </div>
+
+      <!-- Modal -->
+      <div class="container section">
+        <h2 class="title is-2">Modal</h2>
+
+        <!-- Modal button -->
+        <p><button class="button is-primary is-large modal-button" data-target="modal" aria-haspopup="true">Launch example modal</button></p>
+
+        <!-- Modal window -->
+        <div id="modal" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                      <br>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                      egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                  <nav class="level is-mobile">
+                    <div class="level-left">
+                      <a class="level-item" aria-label="retweet">
+                        <span class="icon is-small">
+                          <svg class="svg-inline--fa fa-retweet fa-w-20" aria-hidden="true" data-prefix="fas" data-icon="retweet"
+                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg="">
+                            <path fill="currentColor" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path>
+                          </svg><!-- <i class="fas fa-retweet" aria-hidden="true"></i> -->
+                        </span>
+                      </a>
+                      <a class="level-item" aria-label="like">
+                        <span class="icon is-small">
+                          <svg class="svg-inline--fa fa-heart fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="heart"
+                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                          </svg><!-- <i class="fas fa-heart" aria-hidden="true"></i> -->
+                        </span>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div class="container section">
+        <h2 class="title is-2">Navbar</h2>
+
+        <nav class="navbar is-transparent">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112"
+                height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/">
+                Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/documentation/overview/start/">
+                  Docs
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="/documentation/overview/start/">
+                    Overview
+                  </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                    Modifiers
+                  </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                    Columns
+                  </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                    Layout
+                  </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                    Form
+                  </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                    Elements
+                  </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                      target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span>
+                        Tweet
+                      </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Pagination -->
+      <div class="container section">
+        <h2 class="title is-2">Pagination</h2>
+
+        <nav class="pagination" role="navigation" aria-label="pagination">
+          <a class="pagination-previous" title="This is the first page" disabled>Previous</a>
+          <a class="pagination-next">Next page</a>
+          <ul class="pagination-list">
+            <li>
+              <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 2">2</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 3">3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Panel -->
+      <div class="container section">
+        <h2 class="title is-2">Panel</h2>
+
+        <nav class="panel" style="max-width: 500px;">
+          <p class="panel-heading">
+            repositories
+          </p>
+          <div class="panel-block">
+            <p class="control has-icons-left">
+              <input class="input is-small" type="text" placeholder="search">
+              <span class="icon is-small is-left">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </span>
+            </p>
+          </div>
+          <p class="panel-tabs">
+            <a class="is-active">all</a>
+            <a>public</a>
+            <a>private</a>
+            <a>sources</a>
+            <a>forks</a>
+          </p>
+          <a class="panel-block is-active">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            bulma
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            marksheet
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            minireset.css
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            jgthms.github.io
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+            </span>
+            daniellowtw/infboard
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+            </span>
+            mojs
+          </a>
+          <label class="panel-block">
+            <input type="checkbox">
+            remember me
+          </label>
+          <div class="panel-block">
+            <button class="button is-link is-outlined is-fullwidth">
+              reset all filters
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Tabs -->
+      <div class="container section">
+        <h2 class="title is-2">Tabs</h2>
+
+        <div class="tabs">
+          <ul>
+            <li class="is-active"><a>Pictures</a></li>
+            <li><a>Music</a></li>
+            <li><a>Videos</a></li>
+            <li><a>Documents</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+
+      <script>
+        /*
+        Modal
+         */
+        var button = document.querySelector('.modal-button');
+        var close = document.querySelector('.modal-close');
+        var modal = document.querySelector('.modal');
+
+        button.addEventListener('click', (e) => {
+          modal.classList.toggle('is-active');
+        });
+        close.addEventListener('click', (e) => {
+          modal.classList.remove('is-active');
+        });
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' || e.keyCode === 27) {
+            modal.classList.remove('is-active');
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <body>
+    <div id="site" class="page">
+      <!-- Nav -->
+      <div class="container section">
+        <nav class="navbar is-transparent">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112"
+                height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="index.html">
+                Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="#">
+                  Pages
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="modifiers.html">
+                    Modifiers
+                  </a>
+                  <a class="navbar-item" href="columns.html">
+                    Columns
+                  </a>
+                  <a class="navbar-item is-active" href="layout.html">
+                    Layout
+                  </a>
+                  <a class="navbar-item" href="forms.html">
+                    Forms
+                  </a>
+                  <a class="navbar-item" href="elements.html">
+                    Elements
+                  </a>
+                  <a class="navbar-item" href="components.html">
+                    Components
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                      target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span>
+                        Tweet
+                      </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Title -->
+      <div class="container section">
+        <h1 class="title is-1">Layout</h1>
+      </div>
+
+      <!-- Container -->
+      <div class="container section">
+        <h2 class="title is-2">Container</h2>
+
+        <div class="notification">
+          This container is <strong>centered</strong> on desktop.
+        </div>
+      </div>
+
+      <!-- Media Object -->
+      <div class="container section">
+        <h2 class="title is-2">Media Object</h2>
+
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Barbara Middleton</strong>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit
+                non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                <br>
+                <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+              </p>
+            </div>
+
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Sean Brown</strong>
+                    <br>
+                    Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo
+                    feugiat.
+                    <br>
+                    <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                  </p>
+                </div>
+
+                <article class="media">
+                  Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec
+                  massa.
+                </article>
+
+                <article class="media">
+                  Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra
+                  euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+                </article>
+              </div>
+            </article>
+
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Kayli Eunice </strong>
+                    <br>
+                    Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna
+                    vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+                    <br>
+                    <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </article>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="field">
+              <p class="control">
+                <textarea class="textarea" placeholder="Add a comment..."></textarea>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <button class="button">Post comment</button>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Primary bold title
+            </h1>
+            <h2 class="subtitle">
+              Primary bold subtitle
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section -->
+      <div class="container section">
+        <h2 class="title is-2">Section</h2>
+
+        <div class="container">
+          <h1 class="title">Section</h1>
+          <h2 class="subtitle">
+            A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+          </h2>
+        </div>
+      </div>
+
+      <!-- Tiles -->
+      <div class="container section">
+        <h2 class="title is-2">Tiles</h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-8">
+            <div class="tile">
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                  <p class="title">Vertical...</p>
+                  <p class="subtitle">Top tile</p>
+                </article>
+                <article class="tile is-child notification is-warning">
+                  <p class="title">...tiles</p>
+                  <p class="subtitle">Bottom tile</p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-info">
+                  <p class="title">Middle tile</p>
+                  <p class="subtitle">With an image</p>
+                  <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-danger">
+                <p class="title">Wide tile</p>
+                <p class="subtitle">Aligned with the right tile</p>
+                <div class="content">
+                  <!-- Content -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-success">
+              <div class="content">
+                <p class="title">Tall tile</p>
+                <p class="subtitle">With even more content</p>
+                <div class="content">
+                  <!-- Content -->
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
